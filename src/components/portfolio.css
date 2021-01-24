@@ -1,0 +1,15 @@
+.me > h1 {
+    text-align: center;
+
+}
+
+.me > hr {
+    width: 50px;
+    margin:auto;
+}
+
+.random {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+}

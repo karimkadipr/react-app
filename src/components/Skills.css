@@ -1,0 +1,38 @@
+.Skills {
+    width: 60%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.container {
+    padding-bottom: 10px;
+    padding-top :20px;
+    height: 900px;
+}
+
+hr { 
+    width:95%; 
+    height:1px; 
+    background:grey;
+    margin :auto;
+}
+
+.container >h1 {
+    text-align: center;
+}
+
+.hrr {
+    width: 50px;
+    margin: auto;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+}

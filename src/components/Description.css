@@ -1,0 +1,53 @@
+.description {
+    display: flex ;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    height:900px;
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: black ;
+}
+
+.description::before {
+    content : '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-image: url('background.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    opacity: 0.7;
+
+}
+
+
+.description > img {
+    width: 300px ;
+    height: auto;
+    position: relative;
+    transition: transform .2s; 
+}
+
+.description > img:hover {
+    transform: scale(1.2);
+}
+
+
+hr { width:100%; height:1px; background: #fff }
+
+.description >div> h1 {
+    position: relative;
+    font-size:80px ;
+    text-align: left;
+}
+
+h2{
+    position: relative;
+}
+
+
+

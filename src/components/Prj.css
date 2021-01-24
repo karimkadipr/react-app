@@ -1,0 +1,42 @@
+.container1 {
+    width: 900px;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: white;
+}
+
+.textContent {
+    margin: auto;
+}
+
+.Image{
+    width: 50%;
+}
+
+
+.inside {
+    width: 60%;
+    margin: auto;
+}
+
+.Image > img {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+
+
+h1 {
+    font-size: 45px;
+}
+
+.paragrapgh {
+    
+}

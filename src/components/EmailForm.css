@@ -1,0 +1,40 @@
+.email {
+    background: white;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.input1{
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.input2{
+    margin-left: 9%; 
+    margin-right: 9%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.EmailForm > h1 {
+    text-align: center;
+    padding-bottom: 0;
+}
+ hr {
+    width :50px;
+}
+
