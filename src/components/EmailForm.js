@@ -4,7 +4,6 @@ import But from './Button.js'
 import { Input } from '@material-ui/core';
 import Aos  from 'aos'
 import 'aos/dist/aos.css'
-import { TextField } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -35,14 +34,13 @@ function EmailForm() {
             <h1>Get in touch</h1>
             <hr/>
 
-            <div data-aos="zoom-out" data-aos-duration="2000" className="email">
+            <div data-aos-once="true" data-aos="zoom-out" data-aos-duration="2000" className="email">
                 <div className="name">
                     <Input className={classes.input1}placeholder="First Name" label="First Name" type="name" />
                     <Input className={classes.input1} placeholder="Last Name" label="First Name" type="name" />
                 </div>
                 <div className="input2">
                     <Input className={classes.input2} placeholder="Comments" type="text"/>
-                    
                 </div>
                     <But text ="Submit"></But>
             </div>

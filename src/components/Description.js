@@ -11,13 +11,13 @@ function Description() {
     return (
 
         <div  id="homepage" className="description">
-            <div data-aos="zoom-in" data-aos-duration="2000">
+            <div data-aos-once="true" data-aos="zoom-in" data-aos-duration="2000">
                 <h1>Hi,</h1>
-                <h1>Im Karim</h1>
+                <h1>I'm Karim,</h1>
                 <h1>web developer</h1>
                 <h2> - Front end web developer - </h2>
             </div>    
-            <img  data-aos="fade-left" data-aos-duration="2000" src={logo} className="image" alt="Nothing to show"/>
+            <img  data-aos-once="true" data-aos="fade-left" data-aos-duration="2000" src={logo} className="image" alt="Nothing to show"/>
         </div>
         
         

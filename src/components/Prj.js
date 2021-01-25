@@ -1,11 +1,23 @@
 import React , {useEffect} from 'react'
 import But from './Button'
 import './Prj.css'
-
+import { makeStyles } from '@material-ui/core/styles';
 import Aos  from 'aos'
 import 'aos/dist/aos.css'
+import { ReactComponent as Ecommerce } from './undraw_add_to_cart_vkjp.svg';
 
-function Prj({dataAos}) {
+const styles = {
+    width:'100%',
+    marginTop:'auto',
+}
+const useStyles = makeStyles({
+    root: {
+        marginLeft:0 ,
+    },
+    
+  });
+function Prj({dataAos ,ButtonUrl ,imgURL ,TextField , classname}) {
+    const classes = useStyles();
     useEffect(() => {
         Aos.init({});
     }, [])
@@ -13,16 +25,18 @@ function Prj({dataAos}) {
         <div data-aos-once="true"
             data-aos={dataAos} 
             data-aos-duration="2000" 
-            className="container1">
+            className={classname}>
             <div className="textContent">
                 <div className="inside">
-                    <h1>Hey Its me Karim</h1>
-                    <p className="paragrapgh">Im a web developper</p>
-                    <But className="left" text="See Project" url="https://www.google.fr"/>
+                    <h1>{TextField}</h1>
+                    <p className="paragrapgh"></p>
+                    <But className={classes.root} text="See Project" url={ButtonUrl}/>
                 </div>
             </div>
             <div className="Image">
-                <img src="https://paperpillar.com/assets/images/crisp-works.png" alt="nothing loaded"/>
+                {imgURL === 'ecommerce'  &&
+                <Ecommerce style={styles}/>
+                }
             </div>
         </div>
     )
