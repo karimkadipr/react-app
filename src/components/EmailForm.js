@@ -4,8 +4,29 @@ import But from './Button.js'
 import { Input } from '@material-ui/core';
 import Aos  from 'aos'
 import 'aos/dist/aos.css'
+import { TextField } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+    root: {
+      backgroundColor: 'red',
+      height:20,
+    },
+    input1: {
+        width:'40%',
+        paddingTop :'15px',
+        paddingBottom :'15px',
+    },
+    input2: {
+        width:'87%',
+        marginLeft: '6.66%',
+        paddingTop :'15px',
+        paddingBottom :'15px',
+    },
+  });
 
 function EmailForm() {
+    const classes = useStyles();
     useEffect(() => {
         Aos.init({});
     }, [])
@@ -15,15 +36,13 @@ function EmailForm() {
             <hr/>
 
             <div data-aos="zoom-out" data-aos-duration="2000" className="email">
-                <div className="input1">
-                    <Input fullWidth={true} placeholder="Email" type="email"/>
-                </div>
                 <div className="name">
-                    <Input placeholder="First Name" label="First Name" type="name"/>
-                    <Input placeholder="Last Name" label="First Name" type="name"/>
+                    <Input className={classes.input1}placeholder="First Name" label="First Name" type="name" />
+                    <Input className={classes.input1} placeholder="Last Name" label="First Name" type="name" />
                 </div>
                 <div className="input2">
-                    <Input fullWidth={true} placeholder="Comments" type="text"/>
+                    <Input className={classes.input2} placeholder="Comments" type="text"/>
+                    
                 </div>
                     <But text ="Submit"></But>
             </div>

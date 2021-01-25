@@ -1,7 +1,7 @@
 import React from 'react'
 import Skill from './Skill'
 import './Skills.css'
-import But from './Button';
+
 function Skills() {
     return (
         <div id="myskills" className="container">
@@ -20,7 +20,7 @@ function Skills() {
                     
                 </div>
             </div>
-            <But  text="Learn More" url="https://www.google.fr"/>
+            
             
         </div>
     )
