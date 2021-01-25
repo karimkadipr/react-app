@@ -1,7 +1,7 @@
 import React , {useEffect} from 'react'
 import But from './Button'
 import './Prj.css'
-import logo from './prj.jpg'
+
 import Aos  from 'aos'
 import 'aos/dist/aos.css'
 
@@ -10,8 +10,9 @@ function Prj({dataAos}) {
         Aos.init({});
     }, [])
     return (
-        <div data-aos={dataAos} 
-        data-aos-duration="2000" 
+        <div data-aos-once="true"
+            data-aos={dataAos} 
+            data-aos-duration="2000" 
             className="container1">
             <div className="textContent">
                 <div className="inside">
@@ -21,7 +22,7 @@ function Prj({dataAos}) {
                 </div>
             </div>
             <div className="Image">
-                <img src="https://paperpillar.com/assets/images/crisp-works.png"/>
+                <img src="https://paperpillar.com/assets/images/crisp-works.png" alt="nothing loaded"/>
             </div>
         </div>
     )

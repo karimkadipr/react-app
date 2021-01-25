@@ -1,16 +1,17 @@
 import React from 'react';
 import './Navbar.css' ;
 import SimpleMenu from './SimpleMenu'
+import {Link} from 'react-scroll'
 
 function Navbar() {
     return (
         <div className = "navbar"> 
-            <div>My Portfolio</div>
+            <Link  smooth={true} to="homepage" offset={-70} duration={1000}><div className="title">My Portfolio</div></Link>
             <div>
                 <ul className="MyList">
-                    <li className="Hide"><a href="https://www.google.fr">About me</a></li>
-                    <li className="Hide"><a href="https://www.google.fr">My Projects</a></li>
-                    <li className="Hide"><a href="https://www.google.fr">Contact me</a></li>
+                    <li className="Hide"><Link smooth={true} to="myskills" offset={-50} duration={1000}>My Skills</Link></li>
+                    <li className="Hide"><Link smooth={true} to="portfolio" offset={-50} duration={1000}>My Projects</Link></li>
+                    <li className="Hide"><Link smooth={true} to="contact" duration={1000}>Contact me</Link></li>
                     <SimpleMenu   item1="About me" item2="My Projects" item3="Contact me" />
                 </ul>
             </div>

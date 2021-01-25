@@ -4,7 +4,7 @@ import './Skills.css'
 import But from './Button';
 function Skills() {
     return (
-        <div className="container">
+        <div id="myskills" className="container">
             <h1>My Skills</h1>
             <hr className="hrr"/>
             <div className="line">

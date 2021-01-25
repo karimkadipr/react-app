@@ -8,7 +8,7 @@ function Skill({text , imgURL}) {
         Aos.init({});
     }, [])
     return (
-        <div data-aos="zoom-in" data-aos-duration="2000"  className="skill">
+        <div  data-aos-once="true" data-aos="zoom-in" data-aos-duration="2000"  className="skill">
             <img src={imgURL} alt="Loading ..."/>
             <span>{text}</span>
         </div>

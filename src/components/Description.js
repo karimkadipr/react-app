@@ -10,7 +10,7 @@ function Description() {
     }, [])
     return (
 
-        <div  className="description">
+        <div  id="homepage" className="description">
             <div data-aos="zoom-in" data-aos-duration="2000">
                 <h1>Hi,</h1>
                 <h1>Im Karim</h1>

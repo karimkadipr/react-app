@@ -10,7 +10,7 @@ function EmailForm() {
         Aos.init({});
     }, [])
     return (
-        <div className="EmailForm">
+        <div id="contact" className="EmailForm">
             <h1>Get in touch</h1>
             <hr/>
 
