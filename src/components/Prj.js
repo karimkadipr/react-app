@@ -9,10 +9,12 @@ import { ReactComponent as Ecommerce } from './undraw_add_to_cart_vkjp.svg';
 const styles = {
     width:'100%',
     marginTop:'auto',
+    height:'100%'
 }
 const useStyles = makeStyles({
     root: {
         marginLeft:0 ,
+        'background-image': 'linear-gradient(150deg,#c99fff -20%,#4a4eff)',
     },
     
   });
