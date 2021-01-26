@@ -29,10 +29,10 @@ function Description() {
     return (
 
         <div  id="homepage" className="description">
-            <div data-aos-once="true" data-aos="zoom-in" data-aos-duration="2000">
+            <div data-aos-once="true" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Hi,</h1>
                 <h1>I'm Karim,</h1>
-                <h1>web developer</h1>
+                <h1>A web developer</h1>
                 <h2> - Front end web developer - </h2>
             </div>   
             {dimensions.width > 1000 && <img  className="image" data-aos-once="true" data-aos="fade-left" data-aos-duration="2000" src={logo} className="image" alt="Nothing to show"/>}

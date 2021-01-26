@@ -67,7 +67,8 @@ function Prj({dataAos ,ButtonUrl ,imgURL ,TextField , classname , backColor}) {
     return (
         <div data-aos-once="true"
             data-aos={dataAos} 
-            data-aos-duration="2000" 
+            data-aos-duration="1000" 
+            
             className={classname}>
             <div className="textContent">
                 <div className="inside">

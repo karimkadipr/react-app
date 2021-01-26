@@ -34,7 +34,7 @@ function EmailForm() {
             <h1>Get in touch</h1>
             <hr/>
 
-            <div data-aos-once="true" data-aos="zoom-out" data-aos-duration="2000" className="email">
+            <div data-aos-once="true" data-aos="zoom-out" data-aos-duration="1000" className="email">
                 <div className="name">
                     <Input className={classes.input1}placeholder="First Name" label="First Name" type="name" />
                     <Input className={classes.input1} placeholder="Last Name" label="First Name" type="name" />
