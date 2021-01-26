@@ -60,6 +60,10 @@
         font-size: 50px;
         text-align: center;
     }
+    .inside > h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
 
 }
 @media (max-width:920px){
