@@ -17,7 +17,7 @@ function Description() {
                 <h1>web developer</h1>
                 <h2> - Front end web developer - </h2>
             </div>    
-            <img  data-aos-once="true" data-aos="fade-left" data-aos-duration="2000" src={logo} className="image" alt="Nothing to show"/>
+            <img  className="image" data-aos-once="true" data-aos="fade-left" data-aos-duration="2000" src={logo} className="image" alt="Nothing to show"/>
         </div>
         
         

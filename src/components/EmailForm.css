@@ -1,6 +1,17 @@
+@media (min-width:1200px){
+    .email {
+        width: 45%;
+    }
+}
+
+@media (max-width:1200px){
+    .email{
+        width: 80%;
+    }
+}
 .email {
     background: white;
-    width: 40%;
+    
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;

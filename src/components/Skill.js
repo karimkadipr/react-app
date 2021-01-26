@@ -17,7 +17,7 @@ function Skill({text , imgURL}) {
     }
     
     useEffect(() => {
-        Aos.init({});
+        Aos.init({ offset: 200 });
     }, [])
     return (
         
