@@ -23,6 +23,10 @@ export const SliderData = [
     {
       image:'materiel',
       text :'Materiel UI',
+    },
+    {
+      image:'svgGit',
+      text:"GitHub / Git",
     }
   ];
 

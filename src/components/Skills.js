@@ -38,7 +38,9 @@ function Skills() {
                     <Skill imgURL='react' text="React / React Native"/>
                     <Skill imgURL='sass' text="Sass"/>
                     <Skill imgURL='materiel' text="Materiel UI"/>
-                   
+                </div>
+                <div className="Skills">
+                    <Skill imgURL='svgGit' text="GitHub / Git"/>
                 </div>
             </div>
             

@@ -27,7 +27,7 @@ const ImageSlider = ({ slides }) => {
 
   const [current, setCurrent] = useState(0);
   const length = slides.length;
-
+  
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -53,8 +53,8 @@ const ImageSlider = ({ slides }) => {
             {index === current && (
               <div className="imageContainer">
                 <Skill imgURL={slides[index].image} text={slides[index].text}/>
-                <Skill imgURL={slides[(index+1)%6].image} text={slides[(index+1)%6].text}/>
-                {dimensions.width > 800 && <Skill imgURL={slides[(index+2)%6].image} text={slides[(index+2)%6].text}/>}
+                <Skill imgURL={slides[(index+1)%length].image} text={slides[(index+1)%6].text}/>
+                {dimensions.width > 800 && <Skill imgURL={slides[(index+2)%length].image} text={slides[(index+2)%6].text}/>}
                 
               </div>
             )}

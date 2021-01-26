@@ -8,6 +8,8 @@ import { ReactComponent as SvgSass } from './sass-seeklogo.com.svg';
 import { ReactComponent as SvgMateriel } from './material-ui.svg';
 import { ReactComponent as SvgJs } from './javascript-js-seeklogo.com.svg';
 import { ReactComponent as SvgCss } from './css3.svg';
+import { ReactComponent as SvgGit } from './iconfinder_social_media_social_media_logo_git_2993773.svg';
+
 
 
 function Skill({text , imgURL}) {
@@ -39,6 +41,9 @@ function Skill({text , imgURL}) {
                 }
                 {imgURL === 'materiel'  &&
                 <SvgMateriel style={svgStyle}/>
+                }
+                {imgURL === 'svgGit'  &&
+                <SvgGit style={svgStyle}/>
                 }
                 <h3>{text}</h3>
               
