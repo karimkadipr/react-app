@@ -6,7 +6,7 @@ import { ReactComponent as SvgHtml } from './html5.svg';
 import { ReactComponent as SvgReact } from './undraw_react_y7wq.svg';
 import { ReactComponent as SvgSass } from './sass-seeklogo.com.svg';
 import { ReactComponent as SvgMateriel } from './material-ui.svg';
-import { ReactComponent as SvgJs } from './javascript.svg';
+import { ReactComponent as SvgJs } from './javascript-js-seeklogo.com.svg';
 import { ReactComponent as SvgCss } from './css3.svg';
 
 
@@ -21,7 +21,7 @@ function Skill({text , imgURL}) {
     }, [])
     return (
         
-            <div  data-aos-once="true" data-aos="zoom-in" data-aos-duration="2000"  className="skill">
+            <div  data-aos-once="true" data-aos="zoom-in" data-aos-duration="300"  className="skill">
                 {imgURL === 'html'  &&
                 <SvgHtml style={svgStyle}/>
                 }

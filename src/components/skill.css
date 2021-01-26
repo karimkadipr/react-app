@@ -1,4 +1,5 @@
-.skill {
+@media (min-width:800px){
+    .skill {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -8,7 +9,21 @@
     padding-bottom: 20px;
     width: 30%;
 }
+}
 
+@media (max-width:800px){
+    .skill {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        height: 300px;
+        margin: auto;
+        padding-bottom: 20px;
+        width: 45%;
+}
+
+}
 .skill > h3 {
     margin-top: 10px;
     

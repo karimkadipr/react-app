@@ -48,6 +48,7 @@ let styles = {}
         margin:'10%',
         height:'80%',
     } 
+    
     }else {
         styles = {
             width:'60%',

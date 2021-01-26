@@ -1,6 +1,6 @@
 .slider {
     position: relative;
-    height: 100vh;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,16 +33,6 @@
     user-select: none;
   }
   
-  .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  
-  .slide.active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-  }
 
   .imageContainer{
     display: flex;

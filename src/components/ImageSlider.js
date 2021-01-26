@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { SliderData } from './SliderData';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -6,6 +6,25 @@ import './ImageSlider.css';
 import Skill from './Skill'
 
 const ImageSlider = ({ slides }) => {
+
+  const [dimensions, setDimensions] = useState({ 
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+    }
+      window.addEventListener('resize', handleResize)
+         return _ => {
+      window.removeEventListener('resize', handleResize)
+      
+  }
+  })
+
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -33,9 +52,10 @@ const ImageSlider = ({ slides }) => {
           >
             {index === current && (
               <div className="imageContainer">
-                <img src={slides[index].image}  className='image' alt='travel image' />
-                <img src={slides[(index+1)%5].image}  className='image' alt='travel image' />
-                <img src={slides[(index+2)%5].image}  className='image' alt='travel image' />
+                <Skill imgURL={slides[index].image} text={slides[index].text}/>
+                <Skill imgURL={slides[(index+1)%6].image} text={slides[(index+1)%6].text}/>
+                {dimensions.width > 800 && <Skill imgURL={slides[(index+2)%6].image} text={slides[(index+2)%6].text}/>}
+                
               </div>
             )}
           </div>
