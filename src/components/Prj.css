@@ -56,8 +56,8 @@
         width: 80%;
         margin: auto;
     }
-    .inside>h1 {
-        font-size: 45px;
+    h1 {
+        font-size: 50px;
         text-align: center;
     }
 
@@ -106,8 +106,8 @@
     .brown:hover{
         transform: scale(1.05);
     }
-    .inside > h1 {
-        font-size: 25px;
+    h1 {
+        font-size: 35px;
         text-align: center;
     }
 }

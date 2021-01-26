@@ -32,6 +32,7 @@ hr {
 .line {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -39,3 +40,5 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
 }
+
+

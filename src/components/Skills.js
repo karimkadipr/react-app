@@ -24,7 +24,7 @@ function Skills() {
       })
       
     return (
-        <div>
+        <div >
             {dimensions.width > 1000 && <div id="myskills" className="container">
             <h1>My Skills</h1>
             <hr className="hrr"/>
