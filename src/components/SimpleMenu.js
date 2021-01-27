@@ -4,9 +4,19 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
 import './SimpleMenu.css'
+import { makeStyles } from '@material-ui/core/styles';
+
+function iconStyles() {
+  return {
+    successIcon: {
+      color: '#f5f5f7',
+    },
+  }
+}
+
 export default function SimpleMenu(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
-
+  const classes = makeStyles(iconStyles)();
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -18,7 +28,7 @@ export default function SimpleMenu(props) {
   return (
     <div className="Menu">
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-        <MenuIcon />
+        <MenuIcon className={classes.successIcon}/>
       </Button>
       <Menu
         id="simple-menu"

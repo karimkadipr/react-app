@@ -2,12 +2,21 @@
     display: flex ;
     margin-top: 50px;
     justify-content: space-evenly;
-    height:950px;
     align-items: center;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: black ;
+}
 
+@media(min-width:800px){
+    .description{
+        height:950px;
+    }
+}
+@media(max-width:800px){
+    .description{
+        height:600px;
+    }
 }
 
 .description::before {
