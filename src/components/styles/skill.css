@@ -1,0 +1,68 @@
+@media (min-width: 800px) {
+  .skill {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 200px;
+    margin: auto;
+    padding-bottom: 20px;
+
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .skill {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 300px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+  }
+}
+.skill > h3 {
+  margin-top: 10px;
+}
+.skill > img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.skill:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-position: right;
+  transform: scale(1.25);
+}
+
+.skill {
+  transition: transform 0.75s;
+  border-radius: 5px;
+  background-size: 300%;
+  background-position: left;
+  animation: bg-animation 2s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
