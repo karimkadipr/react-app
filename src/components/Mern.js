@@ -60,7 +60,7 @@ function Mern() {
                 data-aos-duration='1000'
                 data-aos-easing='ease-in-out'>
                 <SvgMongo style={svgStyle} />
-                <span>{text}</span>
+                <span>M</span>
               </div>
             </div>
             <div>
