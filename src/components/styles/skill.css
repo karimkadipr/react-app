@@ -51,7 +51,7 @@
 }
 
 .skill {
-  transition: transform 0.75s;
+  transition: all 1s;
   border-radius: 5px;
   background-size: 300%;
   background-position: left;

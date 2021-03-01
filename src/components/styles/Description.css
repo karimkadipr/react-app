@@ -46,7 +46,7 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   opacity: 1;
-  background-size: 200%;
+  background-size: 400%;
   background-position: left;
   animation: bg-animation 4s infinite alternate-reverse;
 }

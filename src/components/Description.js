@@ -50,7 +50,7 @@ function Description() {
         )}
       </div>
       {dimensions.width > 1000 && (
-        <div className='animation' style={{ marginTop: 150 }}>
+        <div className='animation' style={{ marginTop: 140 }}>
           <Link id='animation_arrow' smooth={true} to='mern_stack' offset={-30}>
             <p style={{ color: 'white', fontSize: '30px' }}>Click to scroll</p>
             <ExpandMoreIcon fontSize='large' style={{ color: 'white' }} />
