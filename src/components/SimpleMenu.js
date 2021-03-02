@@ -18,6 +18,7 @@ function iconStyles() {
 export default function SimpleMenu(props) {
   const [anchorEl, setAnchorEl] = React.useState(null)
   const classes = makeStyles(iconStyles)()
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget)
   }
