@@ -5,6 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem'
 import MenuIcon from '@material-ui/icons/Menu'
 import './styles/SimpleMenu.css'
 import { makeStyles } from '@material-ui/core/styles'
+import { Link } from 'react-scroll'
 
 function iconStyles() {
   return {
@@ -40,13 +41,19 @@ export default function SimpleMenu(props) {
         open={Boolean(anchorEl)}
         onClose={handleClose}>
         <MenuItem onClick={handleClose}>
-          <a href='https://www.google.fr'>{props.item1}</a>
+          <Link smooth={true} to='h1_slider' offset={-80} duration={1000}>
+            My Skills
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <a href='https://www.google.fr'>{props.item2}</a>
+          <Link smooth={true} to='portfolio' offset={-40} duration={1000}>
+            My Projects
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <a href='https://www.google.fr'>{props.item3}</a>
+          <Link smooth={true} to='contact' offset={-30} duration={1000}>
+            Contact me
+          </Link>
         </MenuItem>
       </Menu>
     </div>

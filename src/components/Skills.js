@@ -54,7 +54,7 @@ function Skills() {
                   cursor: 'pointer',
                   minWidth: 300,
                 }}>
-                <p style={{ color: 'white', fontSize: '30px' }}>Back end</p>
+                <p style={{ color: 'white', fontSize: '30px' }}>Back End</p>
                 <ExpandMoreIcon fontSize='large' style={{ color: 'white' }} />
               </Link>
             </div>
@@ -76,7 +76,7 @@ function Skills() {
             </div>
           </div>
           <div className='line'>
-            <h1 id='h1_frontend'>front end</h1>
+            <h1 id='h1_frontend'>Front End</h1>
             <hr className='hrr' />
             <div className='Skills' style={{ marginTop: 70 }}>
               <Skill imgURL='html' text='HTML5' />
@@ -92,7 +92,7 @@ function Skills() {
             <div className='double_arrows_second'>
               <div className='animation'>
                 <Link smooth={true} offset={-70} to='h1_backend'>
-                  <p style={{ color: 'black', fontSize: '30px' }}>Back end</p>
+                  <p style={{ color: 'black', fontSize: '30px' }}>Back End</p>
                   <ExpandMoreIcon fontSize='large' style={{ color: 'black' }} />
                 </Link>
               </div>
@@ -132,7 +132,7 @@ function Skills() {
               </div>
               <div className='animation_down_to_up'>
                 <Link smooth={true} offset={-70} to='h1_frontend'>
-                  <p style={{ color: 'black', fontSize: '30px' }}>Frontend</p>
+                  <p style={{ color: 'black', fontSize: '30px' }}>Front End</p>
                   <ExpandLessIcon fontSize='large' style={{ color: 'black' }} />
                 </Link>
               </div>
@@ -140,7 +140,7 @@ function Skills() {
           </div>
           <div className='line'>
             <h1 id='h1_tech' className='spacing'>
-              Other technologies{' '}
+              Other Technologies{' '}
             </h1>
             <div className='Skills' style={{ marginTop: 150 }}>
               <Skill imgURL='svgGit' text='Git / GitHub' />
@@ -148,13 +148,13 @@ function Skills() {
             <div className='double_arrows_second' style={{ marginTop: 200 }}>
               <div className='animation_down_to_up'>
                 <Link smooth={true} offset={-70} to='h1_frontend'>
-                  <p style={{ color: 'black', fontSize: '30px' }}>Frontend</p>
+                  <p style={{ color: 'black', fontSize: '30px' }}>Front End</p>
                   <ExpandLessIcon fontSize='large' style={{ color: 'black' }} />
                 </Link>
               </div>
               <div className='animation_down_to_up'>
                 <Link smooth={true} offset={-70} to='h1_backend'>
-                  <p style={{ color: 'black', fontSize: '30px' }}>Backend</p>
+                  <p style={{ color: 'black', fontSize: '30px' }}>Back End</p>
                   <ExpandLessIcon fontSize='large' style={{ color: 'black' }} />
                 </Link>
               </div>
@@ -162,7 +162,9 @@ function Skills() {
             <div class='one_arrow'>
               <div className='animation'>
                 <Link smooth={true} offset={-70} to='portfolio'>
-                  <p style={{ color: 'black', fontSize: '30px' }}>Projects</p>
+                  <p style={{ color: 'black', fontSize: '30px' }}>
+                    My Projects
+                  </p>
                   <ExpandMoreIcon fontSize='large' style={{ color: 'black' }} />
                 </Link>
               </div>
@@ -172,7 +174,7 @@ function Skills() {
       )}
       {dimensions.width < 1000 && (
         <div>
-          <h1>My Skills</h1>
+          <h1 id='h1_slider'> My Skills</h1>
           <hr className='hrr' />
           <ImageSlider slides={SliderData} />
         </div>

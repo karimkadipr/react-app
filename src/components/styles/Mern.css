@@ -20,7 +20,7 @@
 }
 
 .svg_container > div:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .svg_container > div {
@@ -30,7 +30,6 @@
 .Mern_container {
   height: 950px;
   background: white;
-
   background-size: 400%;
   animation: bg-animation 4s infinite alternate;
 }

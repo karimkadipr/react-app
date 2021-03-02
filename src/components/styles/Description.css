@@ -12,14 +12,14 @@
   font-size: 80px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .description {
     padding-bottom: 20px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .description {
-    height: 800px;
+    height: 700px;
     display: flex;
     justify-content: center;
   }

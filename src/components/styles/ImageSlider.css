@@ -1,43 +1,57 @@
 .slider {
-    position: relative;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image {
-      width: 30%;
-      border-radius: 10px;
-  }
-  
-  .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .imageContainer{
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-    margin: auto;
+.image {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: auto;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  padding-top: 50px;
+}
+
+@media (max-width: 800px) {
+  .swiper-slide {
+    width: 20%;
   }
-  
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}

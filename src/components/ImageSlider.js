@@ -1,15 +1,36 @@
 import React, { useState, useEffect } from 'react'
 import { SliderData } from './SliderData'
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 import './styles/ImageSlider.css'
 import Skill from './Skill'
+import Swiper from 'swiper/bundle'
+import 'swiper/swiper-bundle.css'
 
 const ImageSlider = ({ slides }) => {
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth,
   })
+
+  useEffect(() => {
+    const swiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      slidesPerView: 'auto',
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+    })
+  }, [])
+
   useEffect(() => {
     function handleResize() {
       setDimensions({
@@ -23,49 +44,60 @@ const ImageSlider = ({ slides }) => {
     }
   })
 
-  const [current, setCurrent] = useState(0)
-  const length = slides.length
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1)
-  }
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1)
-  }
-
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null
-  }
-
   return (
-    <section className='slider'>
-      <ArrowBackIosIcon className='left-arrow' onClick={prevSlide} />
-      <ArrowForwardIosIcon className='right-arrow' onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}>
-            {index === current && (
-              <div className='imageContainer'>
-                <Skill imgURL={slides[index].image} text={slides[index].text} />
-                <Skill
-                  imgURL={slides[(index + 1) % length].image}
-                  text={slides[(index + 1) % 6].text}
-                />
-                {dimensions.width > 800 && (
+    <>
+      {/*       <section className='slider'>
+        <ArrowBackIosIcon className='left-arrow' onClick={prevSlide} />
+        <ArrowForwardIosIcon className='right-arrow' onClick={nextSlide} />
+        {SliderData.map((slide, index) => {
+          return (
+            <div
+              className={index === current ? 'slide active' : 'slide'}
+              key={index}>
+              {index === current && (
+                <div className='imageContainer'>
                   <Skill
-                    imgURL={slides[(index + 2) % length].image}
-                    text={slides[(index + 2) % 6].text}
+                    imgURL={slides[index].image}
+                    text={slides[index].text}
                   />
-                )}
+                  <Skill
+                    imgURL={slides[(index + 1) % length].image}
+                    text={slides[(index + 1) % 7].text}
+                  />
+                  {dimensions.width > 800 && (
+                    <Skill
+                      imgURL={slides[(index + 2) % length].image}
+                      text={slides[(index + 2) % 7].text}
+                    />
+                  )}
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </section> */}
+
+      <div class='swiper-container'>
+        <div class='swiper-wrapper'>
+          {SliderData.map((slide) => {
+            return (
+              <div
+                key={slide.image}
+                class='swiper-slide'
+                style={
+                  dimensions.width > 800 ? { width: '33%' } : { width: '50%' }
+                }>
+                <Skill imgURL={slide.image} text={slide.text} />
               </div>
-            )}
-          </div>
-        )
-      })}
-    </section>
+            )
+          })}
+        </div>
+
+        <div class='swiper-pagination'></div>
+        <div class='swiper-button-prev'></div>
+        <div class='swiper-button-next'></div>
+      </div>
+    </>
   )
 }
 

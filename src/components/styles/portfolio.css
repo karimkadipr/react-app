@@ -1,19 +1,19 @@
 .me > h1 {
-    text-align: center;
-
+  text-align: center;
+  padding: 20px 0;
 }
 
 .me > hr {
-    width: 50px;
-    margin:auto;
+  width: 50px;
+  margin: auto;
 }
 
 .random {
-    width: 80%;
-    margin: auto;
-    border: 1px solid black;
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
 }
 
 .me {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }

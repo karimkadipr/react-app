@@ -16,13 +16,12 @@
   .skill {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     justify-content: space-around;
-    height: 300px;
+    height: 200px;
+    width: 80%;
     margin: auto;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    width: 100%;
+    padding: 1rem 0;
   }
 }
 .skill > h3 {
@@ -47,15 +46,26 @@
     #ece9e6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: right;
-  transform: scale(1.25);
 }
 
 .skill {
-  transition: all 1s;
   border-radius: 5px;
   background-size: 300%;
   background-position: left;
   animation: bg-animation 2s infinite alternate;
+  transition: all 1s;
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .skill:hover {
+    transform: scale(1.025);
+  }
+}
+
+@media (min-width: 1500px) {
+  .skill:hover {
+    transform: scale(1.25);
+  }
 }
 
 @keyframes bg-animation {

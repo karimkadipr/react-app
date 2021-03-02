@@ -33,8 +33,8 @@ function Mern() {
   }, [])
 
   const svgStyle = {
-    height: 300,
-    width: 300,
+    width: dimensions.width > 1600 ? 300 : dimensions.width > 1300 ? 250 : 200,
+    height: dimensions.width > 1600 ? 300 : dimensions.width > 1300 ? 250 : 200,
   }
 
   /*   const MongoOnMouseover = () => {
