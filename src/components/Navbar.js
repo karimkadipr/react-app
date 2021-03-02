@@ -33,7 +33,7 @@ function Navbar() {
               Contact me
             </Link>
           </li>
-          <SimpleMenu item1='myskills' item2='My Projects' item3='Contact me' />
+          <SimpleMenu />
         </ul>
       </div>
     </div>
