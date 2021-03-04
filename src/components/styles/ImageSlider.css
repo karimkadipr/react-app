@@ -46,11 +46,12 @@
   padding-top: 50px;
 }
 
-@media (max-width: 800px) {
-  .swiper-slide {
-    width: 20%;
+@media (max-width: 400) {
+  .swiper-container {
+    max-width: 300px;
   }
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;

@@ -6,9 +6,7 @@
     justify-content: space-around;
     height: 200px;
     margin: auto;
-    padding-bottom: 20px;
-
-    padding-top: 20px;
+    padding: 1rem 1rem;
   }
 }
 
@@ -21,7 +19,7 @@
     height: 200px;
     width: 80%;
     margin: auto;
-    padding: 1rem 0;
+    padding: 1rem 0.2rem;
   }
 }
 .skill > h3 {
@@ -75,8 +73,4 @@
   100% {
     background-position: right;
   }
-}
-
-.svg_container {
-  display: none;
 }

@@ -16,7 +16,7 @@ const ImageSlider = ({ slides }) => {
   useEffect(() => {
     const swiper = new Swiper('.swiper-container', {
       // Optional parameters
-      loop: true,
+
       slidesPerView: 2,
 
       // If we need pagination
