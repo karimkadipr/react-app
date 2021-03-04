@@ -84,12 +84,7 @@ const ImageSlider = ({ slides }) => {
         <div class='swiper-wrapper'>
           {SliderData.map((slide) => {
             return (
-              <div
-                key={slide.image}
-                class='swiper-slide'
-                style={
-                  dimensions.width > 800 ? { width: '33%' } : { width: 200 }
-                }>
+              <div key={slide.image} class='swiper-slide'>
                 <Skill imgURL={slide.image} text={slide.text} />
               </div>
             )
