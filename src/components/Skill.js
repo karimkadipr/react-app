@@ -24,19 +24,7 @@ function Skill({ text, imgURL }) {
     height: 'auto',
     minHeight: 150,
     maxHeight: 150,
-  }
-
-  const svgStyleMedium = {
-    width: 100,
-    height: 'auto',
-    minHeight: 100,
-    maxHeight: 150,
-  }
-  const svgStyleSmall = {
-    width: 75,
-    height: 'auto',
-    minHeight: 100,
-    maxHeight: 150,
+    paddingTop: 50,
   }
 
   useEffect(() => {
@@ -59,138 +47,19 @@ function Skill({ text, imgURL }) {
     <div data-aos-once='true' data-aos='zoom-in' data-aos-duration='300'>
       <div className='skill'>
         <div>
-          {imgURL === 'html' && (
-            <SvgHtml
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
-          {imgURL === 'react' && (
-            <SvgReact
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
-          {imgURL === 'css3' && (
-            <SvgCss
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
-          {imgURL === 'js' && (
-            <SvgJs
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
-          {imgURL === 'sass' && (
-            <SvgSass
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
-          {imgURL === 'materiel' && (
-            <SvgMateriel
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
-          {imgURL === 'svgGit' && (
-            <SvgGit
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
-          {imgURL === 'SvgMongo' && (
-            <SvgMongo
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
-          {imgURL === 'SvgNode' && (
-            <SvgNode
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
-          {imgURL === 'SvgExpress' && (
-            <SvgExpress
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
-          {imgURL === 'SvgRedux' && (
-            <SvgRedux
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
-          )}
+          {imgURL === 'html' && <SvgHtml style={svgStyle} />}
+          {imgURL === 'react' && <SvgReact style={svgStyle} />}
+          {imgURL === 'css3' && <SvgCss style={svgStyle} />}
+          {imgURL === 'js' && <SvgJs style={svgStyle} />}
+          {imgURL === 'sass' && <SvgSass style={svgStyle} />}
+          {imgURL === 'materiel' && <SvgMateriel style={svgStyle} />}
+          {imgURL === 'svgGit' && <SvgGit style={svgStyle} />}
+          {imgURL === 'SvgMongo' && <SvgMongo style={svgStyle} />}
+          {imgURL === 'SvgNode' && <SvgNode style={svgStyle} />}
+          {imgURL === 'SvgExpress' && <SvgExpress style={svgStyle} />}
+          {imgURL === 'SvgRedux' && <SvgRedux style={svgStyle} />}
           {imgURL === 'SvgMongoose' && (
-            <img
-              src={SvgMongoose}
-              style={
-                dimensions.width > 700
-                  ? svgStyle
-                  : dimensions.width > 400
-                  ? svgStyleMedium
-                  : svgStyleSmall
-              }
-            />
+            <img src={SvgMongoose} style={svgStyle} />
           )}
           <h3 style={{ paddingBottom: '1rem' }}>{text}</h3>
         </div>

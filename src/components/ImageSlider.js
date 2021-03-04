@@ -17,8 +17,6 @@ const ImageSlider = ({ slides }) => {
     const swiper = new Swiper('.swiper-container', {
       // Optional parameters
 
-      slidesPerView: 2,
-
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',

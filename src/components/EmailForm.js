@@ -49,7 +49,12 @@ function EmailForm() {
   }
 
   return (
-    <div id='contact' className='EmailForm'>
+    <div
+      id='contact'
+      className='EmailForm'
+      data-aos-once='true'
+      data-aos='fade-up'
+      data-aos-duration='1000'>
       <h1>Get in touch</h1>
       <hr style={{ width: 50 }} />
 
