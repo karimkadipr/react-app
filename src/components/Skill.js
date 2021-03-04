@@ -22,7 +22,7 @@ function Skill({ text, imgURL }) {
   const svgStyle = {
     width: 150,
     height: 'auto',
-    minHeight: 100,
+    minHeight: 150,
     maxHeight: 150,
   }
 
