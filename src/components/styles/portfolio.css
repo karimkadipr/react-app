@@ -17,3 +17,9 @@
 .me {
   margin-bottom: 150px;
 }
+
+@media (max-width: 600px) {
+  .me {
+    padding-top: 50px;
+  }
+}
