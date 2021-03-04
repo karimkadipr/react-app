@@ -53,12 +53,7 @@ function EmailForm() {
       <h1>Get in touch</h1>
       <hr style={{ width: 50 }} />
 
-      <form
-        onSubmit={sendEmail}
-        data-aos-once='true'
-        data-aos='zoom-out'
-        data-aos-duration='1000'
-        className='email'>
+      <form onSubmit={sendEmail} className='email'>
         <div className='name'>
           <div className='name_holder'>
             <FormControl fullWidth={true}>

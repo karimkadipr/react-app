@@ -80,22 +80,22 @@ const ImageSlider = ({ slides }) => {
         })}
       </section> */}
 
-      <div class='swiper-container'>
-        <div class='swiper-wrapper'>
+      <div className='swiper-container'>
+        <div className='swiper-wrapper'>
           {SliderData.map((slide) => {
             return (
-              <div key={slide.image} class='swiper-slide'>
+              <div key={slide.image} className='swiper-slide'>
                 <Skill imgURL={slide.image} text={slide.text} />
               </div>
             )
           })}
         </div>
 
-        <div class='swiper-pagination'></div>
-        <div class='swiper-button-prev'>
+        <div className='swiper-pagination'></div>
+        <div className='swiper-button-prev'>
           <ArrowLeftIcon style={{ height: 40, width: 'auto' }} />
         </div>
-        <div class='swiper-button-next'>
+        <div className='swiper-button-next'>
           <ArrowRightIcon style={{ height: 40, width: 'auto' }} />
         </div>
       </div>

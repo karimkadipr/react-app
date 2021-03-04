@@ -17,9 +17,8 @@
     align-items: center;
     justify-content: center;
     height: 200px;
-    width: 80%;
+    width: 60%;
     margin: auto;
-    padding: 1rem 0.2rem;
   }
 }
 .skill > h3 {
@@ -30,20 +29,22 @@
   padding-right: 20px;
 }
 
-.skill:hover {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background: #ece9e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffffff,
-    #ece9e6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-position: right;
+@media (min-width: 600px) {
+  .skill:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #ece9e6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ffffff,
+      #ece9e6
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ffffff,
+      #ece9e6
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: right;
+  }
 }
 
 .skill {

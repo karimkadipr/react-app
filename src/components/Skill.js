@@ -22,18 +22,21 @@ function Skill({ text, imgURL }) {
   const svgStyle = {
     width: 150,
     height: 'auto',
-    minHeight: 150,
+    minHeight: 100,
+    maxHeight: 150,
   }
 
   const svgStyleMedium = {
     width: 100,
     height: 'auto',
-    minHeight: 150,
+    minHeight: 100,
+    maxHeight: 150,
   }
   const svgStyleSmall = {
     width: 75,
     height: 'auto',
-    minHeight: 150,
+    minHeight: 100,
+    maxHeight: 150,
   }
 
   useEffect(() => {
@@ -189,9 +192,8 @@ function Skill({ text, imgURL }) {
               }
             />
           )}
+          <h3 style={{ paddingBottom: '1rem' }}>{text}</h3>
         </div>
-
-        <h3>{text}</h3>
       </div>
     </div>
   )

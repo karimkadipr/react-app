@@ -29,7 +29,6 @@ function Skills() {
     <div>
       {dimensions.width > 1000 && (
         <div id='myskills' className='container'>
-          {/* <div class='title_skill'>My Skills</div> */}
           <div className='h1_myskills'>
             <h1>My Skills</h1>
           </div>
@@ -78,7 +77,7 @@ function Skills() {
           <div className='line'>
             <h1 id='h1_frontend'>Front End</h1>
             <hr className='hrr' />
-            <div className='Skills' style={{ marginTop: 70 }}>
+            <div className='Skills' style={{ marginTop: 70, marginBottom: 50 }}>
               <Skill imgURL='html' text='HTML5' />
               <Skill imgURL='css3' text='CSS3' />
               <Skill imgURL='js' text='JavaScript' />
@@ -159,7 +158,7 @@ function Skills() {
                 </Link>
               </div>
             </div>
-            <div class='one_arrow'>
+            <div className='one_arrow'>
               <div className='animation'>
                 <Link smooth={true} offset={-70} to='portfolio'>
                   <p style={{ color: 'black', fontSize: '30px' }}>
