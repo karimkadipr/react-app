@@ -4,6 +4,8 @@ import './styles/ImageSlider.css'
 import Skill from './Skill'
 import Swiper from 'swiper/bundle'
 import 'swiper/swiper-bundle.css'
+import ArrowRightIcon from '@material-ui/icons/ArrowRight'
+import ArrowLeftIcon from '@material-ui/icons/ArrowLeft'
 
 const ImageSlider = ({ slides }) => {
   const [dimensions, setDimensions] = useState({
@@ -14,7 +16,7 @@ const ImageSlider = ({ slides }) => {
   useEffect(() => {
     const swiper = new Swiper('.swiper-container', {
       // Optional parameters
-      slidesPerView: 'auto',
+      slidesPerView: 2,
 
       // If we need pagination
       pagination: {
@@ -85,7 +87,7 @@ const ImageSlider = ({ slides }) => {
                 key={slide.image}
                 class='swiper-slide'
                 style={
-                  dimensions.width > 800 ? { width: '33%' } : { width: '50%' }
+                  dimensions.width > 800 ? { width: '33%' } : { width: 200 }
                 }>
                 <Skill imgURL={slide.image} text={slide.text} />
               </div>
@@ -94,8 +96,12 @@ const ImageSlider = ({ slides }) => {
         </div>
 
         <div class='swiper-pagination'></div>
-        <div class='swiper-button-prev'></div>
-        <div class='swiper-button-next'></div>
+        <div class='swiper-button-prev'>
+          <ArrowLeftIcon style={{ height: 40, width: 'auto' }} />
+        </div>
+        <div class='swiper-button-next'>
+          <ArrowRightIcon style={{ height: 40, width: 'auto' }} />
+        </div>
       </div>
     </>
   )
