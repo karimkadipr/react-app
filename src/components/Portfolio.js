@@ -16,19 +16,20 @@ function Portfolio() {
         imgURL='ecommerce'
       />
       <Prj
-        backColor='blue'
-        classname='left'
-        TextField='Messaging App'
-        dataAos='fade-up'
-        imgURL='messaging'
-      />
-      <Prj
         backColor='brown'
-        classname='right'
+        classname='left'
         TextField='Social Media App'
         dataAos='fade-up'
         imgURL='social'
+        ButtonUrl='https://karim-social-media.herokuapp.com/'
       />
+      {/*       <Prj
+        backColor='blue'
+        classname='right'
+        TextField='Messaging App'
+        dataAos='fade-up'
+        imgURL='messaging'
+      /> */}
     </div>
   )
 }
