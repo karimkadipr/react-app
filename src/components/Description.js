@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './styles/Description.css'
-import logo from './logo.jpg'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { Link } from 'react-scroll'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import { ReactComponent as SvgLogo } from './undraw_portfolio_website_lidw.svg'
+import { ReactComponent as SvgLogo } from '../images/undraw_portfolio_website_lidw.svg'
 
 function Description() {
   const [dimensions, setDimensions] = useState({
@@ -43,7 +42,6 @@ function Description() {
             data-aos-once='true'
             data-aos='fade-left'
             data-aos-duration='2000'
-            src={logo}
             className='image'
             alt='Nothing to show'
           />
