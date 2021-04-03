@@ -74,23 +74,17 @@ function Prj({ dataAos, ButtonUrl, imgURL, TextField, classname, backColor }) {
           <h1>{TextField}</h1>
           <p className='paragrapgh'></p>
           {imgURL === 'ecommerce' && (
-            <Link
-              to='/project/shop'
-              className={classes.purple}
-              variant='contained'>
+            <Link to='/project/shop' className={classes.purple}>
               See Project
             </Link>
           )}
           {imgURL === 'messaging' && (
-            <Link className={classes.blue} to={ButtonUrl} variant='contained'>
+            <Link className={classes.blue} to={ButtonUrl}>
               See Project
             </Link>
           )}
           {imgURL === 'social' && (
-            <Link
-              className={classes.brown}
-              to='/project/socialMedia'
-              variant='contained'>
+            <Link className={classes.brown} to='/project/socialMedia'>
               See Project
             </Link>
           )}
