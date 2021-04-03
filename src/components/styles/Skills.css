@@ -37,7 +37,7 @@ hr {
 .line {
   display: flex;
   flex-direction: column;
-  height: 950px;
+  height: 95vh;
 }
 
 h1 {
@@ -56,7 +56,7 @@ h1 {
 }
 
 .h1_myskills {
-  height: 830px;
+  height: 85vh;
   background: black;
   color: White;
   display: flex;

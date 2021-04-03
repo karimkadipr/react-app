@@ -1,33 +1,22 @@
 import React from 'react'
 import './App.css'
-import Description from './components/Description'
-import Navbar from './components/Navbar'
-import Portfolio from './components/Portfolio'
-import Skills from './components/Skills'
-import Footer from './components/Footer'
-import EmailForm from './components/EmailForm'
-import ImageSlider from './components/ImageSlider'
-import { SliderData } from './components/SliderData'
-import Prj from './components/Prj'
-import Mern from './components/Mern'
-import Meta from './components/Meta'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import HomePage from './components/HomePage'
+import ProjectShop from './components/ProjectShop'
+import ProjectSocialMedia from './components/ProjectSocialMedia'
 
 function App() {
   return (
     <div className='App'>
-      <Meta />
-      <Navbar />
-      <Description />
-      <Mern />
-      {/* Skiils */}
-      <Skills />
-      {/* Porftilio */}
-      <Portfolio />
-      {/* Project */}
-      {/* Email me */}
-      <EmailForm />
-
-      <Footer />
+      <Router>
+        <Route path='/' component={HomePage} exact />
+        <Route path='/project/shop' component={ProjectShop} exact />
+        <Route
+          path='/project/SocialMedia'
+          component={ProjectSocialMedia}
+          exact
+        />
+      </Router>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useReducer } from 'react'
 import { ReactComponent as SvgMongo } from '../images/icons8-mongodb.svg'
 import { ReactComponent as SvgReact } from '../images/react-js.svg'
 import { ReactComponent as SvgNode } from '../images/nodejs-seeklogo.com.svg'
@@ -8,9 +8,33 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import Aos from 'aos'
 
 import './styles/Mern.css'
+import { CSSTransition } from 'react-transition-group'
+
+const initialState = {
+  express: false,
+  mongodb: false,
+  nodejs: false,
+  reactjs: false,
+}
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'express':
+      return { express: !state.express }
+    case 'reactjs':
+      return { reactjs: !state.reactjs }
+    case 'nodejs':
+      return { nodejs: !state.nodejs }
+    case 'mongodb':
+      return { mongodb: !state.mongodb }
+
+    default:
+      throw new Error('Unexpected action')
+  }
+}
 
 function Mern() {
-  const [text, setText] = useState('')
+  const [state, dispatch] = useReducer(reducer, initialState)
+  const [style, setStyle] = useState(false)
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth,
@@ -52,19 +76,34 @@ function Mern() {
           <div className='svg_container'>
             <div>
               <div
-                /*   onMouseEnter={MongoOnMouseover}
-                onMouseLeave={MongoOnMouseout} */
+                onMouseEnter={() => dispatch({ type: 'mongodb' })}
+                onMouseLeave={() => dispatch({ type: 'mongodb' })}
                 className='svgItem'
                 data-aos-once='true'
                 data-aos='fade-left'
                 data-aos-duration='1000'
                 data-aos-easing='ease-in-out'>
                 <SvgMongo style={svgStyle} />
-                <span>M</span>
+                <CSSTransition
+                  unmountOnExit
+                  in={state.mongodb}
+                  classNames='span-animation'
+                  timeout={300}>
+                  <span>MongoDB</span>
+                </CSSTransition>
+                <CSSTransition
+                  unmountOnExit
+                  in={!state.mongodb}
+                  classNames='span-animation'
+                  timeout={300}>
+                  <span>M</span>
+                </CSSTransition>
               </div>
             </div>
             <div>
               <div
+                onMouseEnter={() => dispatch({ type: 'express' })}
+                onMouseLeave={() => dispatch({ type: 'express' })}
                 className='svgItem'
                 data-aos-once='true'
                 data-aos='fade-left'
@@ -72,11 +111,26 @@ function Mern() {
                 data-aos-easing='ease-in-out'
                 data-aos-delay='800'>
                 <SvgExpress style={svgStyle} />
-                <span>E</span>
+                <CSSTransition
+                  unmountOnExit
+                  in={state.express}
+                  classNames='span-animation'
+                  timeout={300}>
+                  <span>Express JS</span>
+                </CSSTransition>
+                <CSSTransition
+                  unmountOnExit
+                  in={!state.express}
+                  classNames='span-animation'
+                  timeout={300}>
+                  <span>E</span>
+                </CSSTransition>
               </div>
             </div>
             <div>
               <div
+                onMouseEnter={() => dispatch({ type: 'reactjs' })}
+                onMouseLeave={() => dispatch({ type: 'reactjs' })}
                 className='svgItem'
                 data-aos-once='true'
                 data-aos='fade-left'
@@ -84,11 +138,26 @@ function Mern() {
                 data-aos-easing='ease-in-out'
                 data-aos-delay='1600'>
                 <SvgReact style={svgStyle} />
-                <span>R</span>
+                <CSSTransition
+                  unmountOnExit
+                  in={state.reactjs}
+                  classNames='span-animation'
+                  timeout={300}>
+                  <span>React JS</span>
+                </CSSTransition>
+                <CSSTransition
+                  unmountOnExit
+                  in={!state.reactjs}
+                  classNames='span-animation'
+                  timeout={300}>
+                  <span>R</span>
+                </CSSTransition>
               </div>
             </div>
             <div>
               <div
+                onMouseEnter={() => dispatch({ type: 'nodejs' })}
+                onMouseLeave={() => dispatch({ type: 'nodejs' })}
                 className='svgItem'
                 data-aos-once='true'
                 data-aos='fade-left'
@@ -96,7 +165,21 @@ function Mern() {
                 data-aos-easing='ease-in-out'
                 data-aos-delay='2400'>
                 <SvgNode style={svgStyle} />
-                <span>N</span>
+
+                <CSSTransition
+                  unmountOnExit
+                  in={state.nodejs}
+                  classNames='span-animation'
+                  timeout={300}>
+                  <span>Node JS</span>
+                </CSSTransition>
+                <CSSTransition
+                  unmountOnExit
+                  in={!state.nodejs}
+                  classNames='span-animation'
+                  timeout={300}>
+                  <span>N</span>
+                </CSSTransition>
               </div>
             </div>
           </div>

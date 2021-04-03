@@ -3,6 +3,7 @@ import './styles/Prj.css'
 import { makeStyles } from '@material-ui/core/styles'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
 import { ReactComponent as Ecommerce } from '../images/undraw_add_to_cart_vkjp.svg'
 import { ReactComponent as Messaging } from '../images/undraw_online_messaging_9ro6.svg'
 import { ReactComponent as SocialMedia } from '../images/undraw_Social_media_re_w12q.svg'
@@ -16,8 +17,8 @@ const useStyles = makeStyles({
     'justify-content': 'center',
     padding: '25px 10px 25px 10px',
     margin: 'auto',
-    width: 150,
-    height: 50,
+    width: 130,
+    borderRadius: 10,
   },
   blue: {
     background: 'linear-gradient(to right, #314755, #26a0da)',
@@ -26,8 +27,8 @@ const useStyles = makeStyles({
     'justify-content': 'center',
     padding: '25px 10px 25px 10px',
     margin: 'auto',
-    width: 150,
-    height: 50,
+    width: 130,
+    borderRadius: 10,
   },
   brown: {
     background: 'linear-gradient(to right, #603813, #b29f94)',
@@ -36,8 +37,8 @@ const useStyles = makeStyles({
     'justify-content': 'center',
     padding: '25px 10px 25px 10px',
     margin: 'auto',
-    width: 150,
-    height: 50,
+    width: 130,
+    borderRadius: 10,
   },
 })
 let styles = {}
@@ -73,31 +74,19 @@ function Prj({ dataAos, ButtonUrl, imgURL, TextField, classname, backColor }) {
           <h1>{TextField}</h1>
           <p className='paragrapgh'></p>
           {imgURL === 'ecommerce' && (
-            <Button
-              className={classes.purple}
-              href={ButtonUrl}
-              variant='contained'>
-              {' '}
+            <Link to={ButtonUrl} className={classes.purple} variant='contained'>
               See Project
-            </Button>
+            </Link>
           )}
           {imgURL === 'messaging' && (
-            <Button
-              className={classes.blue}
-              href={ButtonUrl}
-              variant='contained'>
-              {' '}
+            <Link className={classes.blue} to={ButtonUrl} variant='contained'>
               See Project
-            </Button>
+            </Link>
           )}
           {imgURL === 'social' && (
-            <Button
-              className={classes.brown}
-              href={ButtonUrl}
-              variant='contained'>
-              {' '}
+            <Link className={classes.brown} to={ButtonUrl} variant='contained'>
               See Project
-            </Button>
+            </Link>
           )}
         </div>
       </div>

@@ -12,7 +12,7 @@ function Portfolio() {
         classname='right'
         TextField='E-Commerce Website'
         dataAos='fade-up'
-        ButtonUrl='https://ecommercekarimkadi.herokuapp.com/'
+        ButtonUrl='project/shop'
         imgURL='ecommerce'
       />
       <Prj
@@ -21,7 +21,7 @@ function Portfolio() {
         TextField='Social Media App'
         dataAos='fade-up'
         imgURL='social'
-        ButtonUrl='https://karim-social-media.herokuapp.com/'
+        ButtonUrl='project/socialMedia'
       />
       {/*       <Prj
         backColor='blue'

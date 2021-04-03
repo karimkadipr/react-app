@@ -1,0 +1,7 @@
+.svg_item_project_details {
+  transition: all 0.5s;
+  padding: 0 0.5rem;
+}
+.svg_item_project_details:hover {
+  transform: scale(1.2);
+}

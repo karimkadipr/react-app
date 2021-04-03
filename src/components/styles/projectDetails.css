@@ -1,0 +1,236 @@
+.project_details_container {
+  height: 100vh;
+  background: white;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.project_details_left {
+  flex: 1 1 50%;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+}
+
+.project_details_right {
+  flex: 1 1 50%;
+  padding: 1rem 2rem;
+
+  overflow: hidden;
+}
+
+.project_details_right > h1 {
+  text-align: left;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.svg_container_project_details {
+  display: flex;
+  padding: 1rem 0;
+}
+
+li {
+  padding: 0.25rem 0;
+}
+li:last-child {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid grey;
+}
+.svg_item_project_details {
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 0 0.25rem;
+}
+.svg_item_project_details:hover {
+  transform: scale(1.2);
+}
+
+.website_images_container {
+  height: auto;
+  width: 45vw;
+}
+
+/* .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+} */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile_version_container {
+  position: absolute;
+  height: 500px;
+  width: 250px;
+  right: 2%;
+  top: 35%;
+}
+
+/* 
+
+
+
+
+*/
+/* colors transition */
+.ReactJS {
+  color: white;
+  background: #61dbfb;
+  padding: 1rem;
+}
+.JavaScript {
+  color: black;
+  background: #f0db4f;
+  padding: 1rem;
+}
+.Redux {
+  color: black;
+  background: #764abc;
+  padding: 1rem;
+}
+.NodeJS {
+  background: #68a063;
+  color: black;
+  padding: 1rem;
+}
+.ExpressJS {
+  background: black;
+  color: white;
+  padding: 1rem;
+}
+.MongoDB {
+  background: #3fa037;
+  color: #3f3e42;
+  padding: 1rem;
+}
+
+.GitGitHub {
+  background: black;
+  color: white;
+  padding: 1rem;
+}
+
+.MaterielUI {
+  background: #a6d4fa;
+  color: white;
+  padding: 1rem;
+}
+.SASS {
+  background: #c69;
+  color: white;
+  padding: 1rem;
+}
+.Hoveranicon {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  padding: 1rem;
+}
+
+/*  button */
+.show_more_less_button {
+  border: 0;
+  margin-right: 1rem;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  padding: 1rem 2rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.show_more_less_button:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(56, 56, 56);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.show_more_less_button:hover,
+.show_more_less_button:focus,
+.show_more_less_button:active {
+  color: white;
+}
+.show_more_less_button:hover:before,
+.show_more_less_button:focus:before,
+.show_more_less_button:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Animations */
+.svg-name-enter {
+  transform: translateX(-110%);
+}
+.svg-name-enter-active {
+  transition: all 1s;
+
+  transform: translateX(0);
+}
+.svg-name-exit {
+  transform: translateX(0);
+}
+.svg-name-exit-active {
+  transition: all 0s;
+  transform: translateX(-110%);
+}
