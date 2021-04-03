@@ -12,7 +12,7 @@ function Portfolio() {
         classname='right'
         TextField='E-Commerce Website'
         dataAos='fade-up'
-        ButtonUrl='project/shop'
+        ButtonUrl='/project/shop'
         imgURL='ecommerce'
       />
       <Prj
@@ -21,7 +21,7 @@ function Portfolio() {
         TextField='Social Media App'
         dataAos='fade-up'
         imgURL='social'
-        ButtonUrl='project/socialMedia'
+        ButtonUrl='/project/socialMedia'
       />
       {/*       <Prj
         backColor='blue'

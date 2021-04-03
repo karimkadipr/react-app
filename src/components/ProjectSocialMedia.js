@@ -234,16 +234,20 @@ const ProjectSocialMedia = () => {
 
         {/* buttons */}
         <div style={{ marginTop: '1rem' }}>
-          <Link
+          <a
             className='show_more_less_button'
+            target='_blank'
+            rel='noopener noreferrer'
             to='https://github.com/karimkadipr/socialMedia'>
             GitHub
-          </Link>
-          <Link
+          </a>
+          <a
             className='show_more_less_button'
+            target='_blank'
+            rel='noopener noreferrer'
             to='https://karim-social-media.herokuapp.com/'>
             Website preview
-          </Link>
+          </a>
         </div>
       </div>
     </div>

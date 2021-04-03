@@ -3,7 +3,7 @@ import './styles/projectDetails.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import 'swiper/swiper-bundle.css'
-import { Link } from 'react-router-dom'
+
 import { ReactComponent as SvgHtml } from '../images/html5-1.svg'
 import { ReactComponent as SvgReact } from '../images/react-2.svg'
 import { ReactComponent as SvgSass } from '../images/sass-seeklogo.com.svg'
@@ -232,16 +232,20 @@ const ProjectShop = () => {
 
         {/* buttons */}
         <div style={{ marginTop: '1rem' }}>
-          <Link
+          <a
             className='show_more_less_button'
+            target='_blank'
+            rel='noopener noreferrer'
             href='https://github.com/karimkadipr/E-Commerce'>
             GitHub
-          </Link>
-          <Link
+          </a>
+          <a
             className='show_more_less_button'
+            target='_blank'
+            rel='noopener noreferrer'
             href='https://ecommercekarimkadi.herokuapp.com/'>
             Website preview
-          </Link>
+          </a>
         </div>
       </div>
     </div>
