@@ -62,17 +62,17 @@ const ProjectSocialMedia = () => {
             boxShadow:
               'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',
           }}>
-          {/*         <div className='website_images_container'>
+          <div className='website_images_container'>
             <img
               style={{ border: '5px solid' }}
-              src='/images/8NlKne41.png'
+              src='/images/CaptureTwitter.png'
               data-aos-once='true'
               data-aos='slide-right'
               data-aos-duration='1000'
               data-aos-delay='1000'
             />
           </div>
-          <div
+          {/*  <div
             data-aos-once='true'
             data-aos='zoom-in-up'
             data-aos-duration='1000'
